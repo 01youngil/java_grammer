@@ -90,15 +90,15 @@ public class C02Variable {
         }
         System.out.println(answer);
 
-//        알파벳 소문자만 보이기
-        String st1 = "01abcd123한글123";
-        String answer = "";
-        for(int i=0; i<st1.length();i++){
-            if(st1.charAt(i) >= 'a' && st1.charAt(i)<='z'){
-                answer = answer + st1.charAt(i);
-            }
-        }
-        System.out.println(answer);
+////        알파벳 소문자만 보이기
+//        String st1 = "01abcd123한글123";
+//        String answer = "";
+//        for(int i=0; i<st1.length();i++){
+//            if(st1.charAt(i) >= 'a' && st1.charAt(i)<='z'){
+//                answer = answer + st1.charAt(i);
+//            }
+//        }
+//        System.out.println(answer);
 //
 //
 //
