@@ -107,33 +107,16 @@ public class C06String {
 //        문자열 더하기 : +=
 //        String st1 = "hello";
 //        st1 += " world";
-
-//        문제) 프로그래머스 특정문자 제거하기
-
 //        substring(a,b) : a이상 b미만의 index의 문자를 잘라 반환
 //        String st1 = "hello world";
 //        System.out.println(st1.substring(0,5));
 //        System.out.println(st1.substring(6,st1.length()));
-//        String my_string = "abcdef";
-//        String letter = "f";
-//        String answer = "";
-//        for(int i=0;i<my_string.length();i++){
-//            if(!my_string.substring(i,i+1).equals(letter)){
-//                answer += my_string.substring(i,i+1);
-//            }
-//        }
-//        System.out.println(answer);
-//
-////        문제) 프로그래머스 가운데 글자 가져오기
-//
-//        String answer = "";
-//        String s = "abcde";
-//        if(s.length()%2==1) {
-//            answer += s.substring(s.length() / 2, s.length() / 2 + 1);
-//        }else{
-//            answer += s.substring(s.length() / 2-1, s.length() / 2+1);
-//        }
-//        System.out.println(answer);
+
+//        문제) 프로그래머스 특정문자 제거하기
+
+
+//        문제) 프로그래머스 가운데 글자 가져오기
+
 
 
 //        trim, strip : 문자열 양쪽 끝과 공백 제거  //둘이 같은 효과, strip 선호

@@ -1,8 +1,6 @@
 package C01Basic;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class C09Map {
     public static void main(String[] args) {
@@ -47,18 +45,18 @@ public class C09Map {
 //        System.out.println(sports.containsKey("pingpong")); // false
 
 
-        String[] arr = {"농구", "축구", "농구", "야구", "축구"};
-//        농구 : 2, 축구 : 2, 야구 : 1
-
-        Map<String, Integer> sports = new HashMap<>();
-
-        for(int i = 0;i<arr.length;i++){
-            if(!sports.containsKey(arr[i])){
-                sports.put(arr[i],1);
-            }else{
-                sports.put(arr[i],sports.get(arr[i])+1);
-            }
-        }
+//        String[] arr = {"농구", "축구", "농구", "야구", "축구"};
+////        농구 : 2, 축구 : 2, 야구 : 1
+//
+//        Map<String, Integer> sports = new HashMap<>();
+//
+//        for(int i = 0;i<arr.length;i++){
+//            if(!sports.containsKey(arr[i])){
+//                sports.put(arr[i],1);
+//            }else{
+//                sports.put(arr[i],sports.get(arr[i])+1);
+//            }
+//        }
 ////        향상for문
 //        for(String a : arr){
 //            if(sports.containsKey(a)){
@@ -72,9 +70,77 @@ public class C09Map {
 //        for(String a : arr){
 //            sports.put(a,sports.getOrDefault(a,0)+1);
 //        }
-        System.out.println(sports);
+//        System.out.println(sports);
 
 //        문제) 완주하지 못한 선수 - 프로그래머스
+//        문제) 의상 - 프로그래머스
+
+//        LinkedHashMap : 데이터 삽입순서를 보장(유지)
+//        Map<String, Integer> linkedMap = new LinkedHashMap<>();
+//        linkedMap.put("hello1",1);
+//        linkedMap.put("hello2",2);
+//        linkedMap.put("hello3",3);
+//        linkedMap.put("hello4",4);
+//        linkedMap.put("hello5",5);
+//        for(String l : linkedMap.keySet()){
+//            System.out.println("KEY값은 " + l);
+//        }
+
+//        TreeMap : key를 통해 데이터를 정렬
+//        Map<String, Integer> TreeMap = new TreeMap<>();
+//        TreeMap.put("hello1",1);
+//        TreeMap.put("hello2",2);
+//        TreeMap.put("hello3",3);
+//        TreeMap.put("hello4",4);
+//        TreeMap.put("hello5",5);
+//        for(String l : TreeMap.keySet()){
+//            System.out.println("KEY값은 " + l);
+//        }
+//
+////        Hash맵을 사용해서 key값으로 정렬
+//        Map<String, Integer> myMap = new HashMap<>();
+//        myMap.put("hello1",1);
+//        myMap.put("hello2",2);
+//        myMap.put("hello3",3);
+//        myMap.put("hello4",4);
+//        myMap.put("hello5",5);
+//        List<String> myList = new ArrayList<>();
+//        for(String a : myMap.keySet()){
+//            myList.add(a);
+//        }
+//        myList.sort(Comparator.naturalOrder());
+//        for(String l : myMap.keySet()){
+//            System.out.println("KEY값은 " + l);
+//            System.out.println("VALUE값은 " + myMap.get(l));
+//        }
+//        myList.sort(new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                return myMap.get(o2) - myMap.get(o1);
+//            }
+//        });
+//        System.out.println(myList);
+
+////        hashmap출력방법 2가지 : 1. 강화된 for문     2. iterator
+//        Map<String,String> myMap = new HashMap<>();
+//        myMap.put("basketball", "농구");
+//        myMap.put("soccer", "축구");
+//        myMap.put("baseball", "야구");
+//
+//        for(String a : myMap.keySet()){
+//            System.out.println(a);
+//        }
+//        Iterator<String> myIters = myMap.keySet().iterator();
+////        next매서드는 데이터를 하나씩 소모시키면서 값을 반환
+//        System.out.println(myIters.next());
+////        hasNext는 iterator안에 그 다음값이 있는지 없는지 boolean return
+//
+//        while(myIters.hasNext()){
+//            System.out.println(myIters.next());
+//        }
+
+
+
 
 
     }

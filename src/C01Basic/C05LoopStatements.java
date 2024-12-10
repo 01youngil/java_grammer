@@ -1,5 +1,6 @@
 package C01Basic;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -165,18 +166,18 @@ public class C05LoopStatements {
 //        }
 
 //        일반for문을 통해 arr의 저장된 값 변경
-//        int[] arr = {1,3,5,7};
-//        for(int i=0;i<4;i++){
-//            arr[i] += 10;
-//        }
-//        System.out.println(Arrays.toString(arr));
+        int[] arr = {1,3,5,7};
+        for(int i=0;i<4;i++){
+            arr[i] += 10;
+        }
+        System.out.println(Arrays.toString(arr));
 //        향상된 for문으로 arr 값 변경
 
-//        int[] arr = {1,3,5,7};
-//        for(int a : arr){
-//            a+=100;
-//        }
-//        System.out.println(Arrays.toString(arr));
+        int[] arr2 = {1,3,5,7};
+        for(int a : arr2){
+            a += 100;
+        }
+        System.out.println(Arrays.toString(arr2));
 //
 ////        자바 변수의 유효범위 : {}
 //        int num = 10;
