@@ -27,7 +27,7 @@ public class C08List {
 //            intList.add(i);
 //        }
 
-//        add매서드
+//        add메서드
 //        List<Integer> myList = new ArrayList<>();
 //        myList.add(10);
 //        myList.add(20);

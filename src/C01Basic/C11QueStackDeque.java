@@ -1,5 +1,6 @@
 package C01Basic;
 
+import java.sql.Array;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
@@ -53,49 +54,84 @@ public class C11QueStackDeque {
 //        System.out.println("ArrayList 조회속도 : " + (endTime4-strartTime4));
 
 
-        Queue<String> myQue = new LinkedList<>();
-        myQue.add("문서1");
-        myQue.add("문서2");
-        myQue.add("문서3");
-        while(!myQue.isEmpty()){
-            System.out.println(myQue.poll());
-        }
+//        Queue<String> myQue = new LinkedList<>();
+//        myQue.add("문서1");
+//        myQue.add("문서2");
+//        myQue.add("문서3");
+//        while(!myQue.isEmpty()){
+//            System.out.println(myQue.poll());
+//        }
+//
+////        길이제한큐 : ArrayBlockingQueue
+//        Queue<String> blockingQueue = new ArrayBlockingQueue<>(3);
+////        blockingQueue.add("문서1");
+////        blockingQueue.add("문서2");
+////        blockingQueue.add("문서3");
+////        blockingQueue.add("문서4");
+//
+////        큐에 여유공간이 있을때만 add
+////        blockingQueue.offer("문서1");
+////        blockingQueue.offer("문서2");
+////        blockingQueue.offer("문서3");
+////        blockingQueue.offer("문서4");
+////        System.out.println(blockingQueue);
+//
+////        우선순위큐 : 데이터를 꺼낼때 정렬된 데이터 poll
+////        전체정렬이 아닌, poll할때마다 최소값을 보장
+//        Queue<Integer>pq = new PriorityQueue<>();
+//        pq.add(30);
+//        pq.add(20);
+//        pq.add(10);
+//        pq.add(40);
+//        pq.add(50);
+//        System.out.println(pq); // [10,30,20,40,50] 정렬x
+//        System.out.println(pq.poll());  // 10
+//        System.out.println(pq.poll());  // 20
+//        System.out.println(pq.poll());  // 30 오름차순 정렬하면서 데이터 poll
+//
+////        문제) 최소힙 - 백준
+//
+////        최대힙인경우
+//        Queue<Integer>maxPq = new PriorityQueue<>(Comparator.reverseOrder());
+//        maxPq.add(30);
+//        maxPq.add(20);
+//        maxPq.add(10);
+//        System.out.println(maxPq.poll());
 
-//        길이제한큐 : ArrayBlockingQueue
-        Queue<String> blockingQueue = new ArrayBlockingQueue<>(3);
-//        blockingQueue.add("문서1");
-//        blockingQueue.add("문서2");
-//        blockingQueue.add("문서3");
-//        blockingQueue.add("문서4");
+//        문제) 더 맵게 - 프로그래머스
 
-//        큐에 여유공간이 있을때만 add
-//        blockingQueue.offer("문서1");
-//        blockingQueue.offer("문서2");
-//        blockingQueue.offer("문서3");
-//        blockingQueue.offer("문서4");
-//        System.out.println(blockingQueue);
+//        stack
+//        Stack<Integer> st = new Stack<>();
+//        st.push(10);
+//        st.push(20);
+//        st.push(30);
+//        System.out.println(st.pop()); // 30
+//        System.out.println(st.peek()); // 20
+//        System.out.println(st.size()); // 2
+//        System.out.println(st.isEmpty()); // false
+//
+//        while(!st.isEmpty()){
+//            System.out.println(st.pop());
+//        }
 
-//        우선순위큐 : 데이터를 꺼낼때 정렬된 데이터 poll
-//        전체정렬이 아닌, poll할때마다 최소값을 보장
-        Queue<Integer>pq = new PriorityQueue<>();
-        pq.add(30);
-        pq.add(20);
-        pq.add(10);
-        pq.add(40);
-        pq.add(50);
-        System.out.println(pq); // [10,30,20,40,50] 정렬x
-        System.out.println(pq.poll());  // 10
-        System.out.println(pq.poll());  // 20
-        System.out.println(pq.poll());  // 30 오름차순 정렬하면서 데이터 poll
+//        문제) 같은 숫자는 싫어 - 프로그래머스
 
-//        문제) 최소힙 - 백준
+//        Deque : addFirst, addLast, pollFirst, pollLast
+//        Deque<Integer> d1 = new ArrayDeque<>();
+//        d1.addLast(10);
+//        d1.addLast(20);
+//        System.out.println(d1); // [10, 20]
+//        d1.addFirst(30);
+//        System.out.println(d1); // [30, 10, 20]
+//        System.out.println(d1.peekFirst()); // 30
+//        System.out.println(d1.peekLast()); // 20
+//        System.out.println(d1.pollLast()); // 20
+//        System.out.println(d1.pollFirst()); // 30
+//        System.out.println(d1.pollFirst()); // 10
 
-//        최대힙인경우
-        Queue<Integer>maxPq = new PriorityQueue<>(Comparator.reverseOrder());
-        maxPq.add(30);
-        maxPq.add(20);
-        maxPq.add(10);
-        System.out.println(maxPq.poll());
+//        문제) 올바른 괄호 - 프로그래머스
+
+
 
 
 

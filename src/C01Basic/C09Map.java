@@ -19,8 +19,8 @@ public class C09Map {
 //        System.out.println(sports.get("baseball"));
 //
 ////        map의 전체 데이터 조회
-////        keySet() : map의 key목록을 리턴하는 매서드
-////        values() : map의 value목록을 리턴하는 매서드
+////        keySet() : map의 key목록을 리턴하는 메서드
+////        values() : map의 value목록을 리턴하는 메서드
 //        for(String key : sports.keySet()){
 //            System.out.println("sports의 key값은 : " + key);
 //            System.out.println("sports의 vlaue값은 : " + sports.get(key));
@@ -131,7 +131,7 @@ public class C09Map {
 //            System.out.println(a);
 //        }
 //        Iterator<String> myIters = myMap.keySet().iterator();
-////        next매서드는 데이터를 하나씩 소모시키면서 값을 반환
+////        next메서드는 데이터를 하나씩 소모시키면서 값을 반환
 //        System.out.println(myIters.next());
 ////        hasNext는 iterator안에 그 다음값이 있는지 없는지 boolean return
 //

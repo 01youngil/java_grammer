@@ -19,7 +19,7 @@ public class C01InputOutput {
 //        입력 : System.in(키보드 입력) + Scanner(입력을위한 클래스) 활용
         /*
         Scanner myScanner = new Scanner(System.in); //스캐너객체를 nyScanner변수에 할당
-//        nextline매서드 : 입력맏은 데이터를 한줄로 읽어서 String으로 리턴
+//        nextline메서드 : 입력맏은 데이터를 한줄로 읽어서 String으로 리턴
         String inputline = myScanner.nextLine();
         System.out.println("입력사항 :" + inputline);
 
