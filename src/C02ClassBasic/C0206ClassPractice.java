@@ -20,10 +20,10 @@ public class C0206ClassPractice {
 //        사용자1이 사용자2에게 돈을 보내는 상황 : 계좌번호를 알고 있는 상황.
         for(Account a : accounts){
             if(a.getAcNumber().equals("111111")){
-                a.setBalance(a.getBalance() - 50000);
+//                a.setBalance(a.getBalance() - 50000);
             }
             if(a.getAcNumber().equals("222222")){
-                a.setBalance(a.getBalance() + 50000);
+//                a.setBalance(a.getBalance() + 50000);
             }
         }
 //        계좌번호 잔고조회
@@ -32,14 +32,14 @@ public class C0206ClassPractice {
         }
 
 //        Map을 자료구조로 사용시
-        Map<String,Account> map = new HashMap<>();
-        map.put("1234", new Account("1234",100000));
-        map.put("4321", new Account("4321",100000));
-
-        Account myAccount = map.get("1234");
-        Account yourAccount = map.get("4321");
-        myAccount.setBalance((myAccount.getBalance()-50000));
-        yourAccount.setBalance((yourAccount.getBalance()+50000));
+//        Map<String,Account> map = new HashMap<>();
+//        map.put("1234", new Account("1234",100000));
+//        map.put("4321", new Account("4321",100000));
+//
+//        Account myAccount = map.get("1234");
+//        Account yourAccount = map.get("4321");
+//        myAccount.transfer((myAccount.getBalance()-50000));
+//        yourAccount.transfer((yourAccount.getBalance()+50000));
 
     }
 }
@@ -61,7 +61,8 @@ class Account{
         return balance;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void transfer(Account myAccount , Account yourAccount , int money) {
+        this.balance = this.getBalance() - money;
+
     }
 }
